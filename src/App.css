@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Roboto+Mono&family=Work+Sans:wght@600&display=swap');
+
+body {
+    margin: 0 !important;
+    min-height: 100% !important;
+    background-color: #000 !important;
+    font-family: 'Roboto Mono',sans-serif !important;
+    color: #21d7e5 !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+}
+
+.wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.wrap.dapp {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.dapp-side-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    z-index: 99;
+    min-width: 300px;
+    background-color: transparent;
+}
+
+.navbar-background {
+    background-color: black;
+}
+
+.w-nav {
+    position: relative;
+    background: #ddd;
+    z-index: 1000;
+}
+
+.w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.dapp-nav-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: 100vh;
+    min-width: 250px;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-right: 1px solid #292929;
+    background-color: black;
+}
+
+.brand.dapp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.brand {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.w-nav-brand {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: #333;
+}
+
+.fabric-text {
+    margin: 5px 0;
+    margin-left: 18px;
+    font-family: Exo, sans-serif;
+    color: #61adb2;
+    font-size: 1.4em;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.dapp-nav-menu {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 220px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.dapp-nav-menu {
+    right: 0;
+}
+
+.w-nav-menu {
+    position: relative;
+    float: right;
+}
+
+.dapp-navbar-section-heading {
+    padding-left: 16px;
+    color: #646464;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+}
+
+.dapp-navbar-section-heading.top {
+    margin-top: 0;
+}
+
+.display-none {
+    display: none;
+}
+
+.dapp-nav-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 11px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 350ms ease-in-out;
+    transition: 350ms ease-in-out;
+    font-family: 'Work Sans',sans-serif !important;
+    color: #62989c !important;
+    font-size: 1em !important;
+    font-weight: 400 !important;
+    text-decoration: none;
+}
+
+.dapp-nav-link.w--current {
+    border-radius: 7px;
+    color: #21d7e5;
+    font-weight: 600;
+    text-shadow: 0 0 9px rgb(33 215 230 / 40%);
+    background-color: #061b1f;
+    -webkit-transition: color .2s,box-shadow .2s,background-color .2s,-webkit-transform .4s;
+    transition: color .2s,box-shadow .2s,background-color .2s,transform .4s,-webkit-transform .4s;
+}
+
+.dapp-nav-link:hover {
+    border-radius: 7px !important;
+    color: #21d7e5 !important;
+    font-weight: 600 !important;
+    -webkit-transform: translate(0,-2px);
+    -ms-transform: translate(0,-2px);
+    transform: translate(0,-2px);
+}
+
+.inactive-text {
+    color: #62989c;
+}
+
+.inactive-text:hover {
+    color: #21d7e5;
+}
+
+a {
+    background-color: transparent;
+    color: #21d7e5;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 10px;
+    float: left;
+    font-family: Materialiconsround,sans-serif;
+    font-size: 1.1em;
+    cursor: default;
+}
+
+.side-nav-bottom-block {
+    position: fixed;
+    left: 10px;
+    top: auto;
+    right: 10px;
+    bottom: 10px;
+    max-width: 220px;
+    padding: 10px;
+    background-color: black;
+}
+
+.w-nav-button {
+    position: relative;
+    float: right;
+    padding: 18px;
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dapp-header-wrap {
+    margin-bottom: 20px;
+}
+
+.heading-2 {
+    font-family: 'Work Sans',sans-serif;
+    text-shadow: 0 0 60px rgb(33 215 230 / 50%);
+}
+
+.top-details-grid {
+    position: relative;
+    margin-bottom: 20px;
+    grid-column-gap: 0px;
+    -ms-grid-columns: 2fr 1fr 1fr !important;
+    grid-template-columns: 2fr 1fr 1fr !important;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    border: 1px solid #21d7e5;
+    border-radius: 13px;
+    background-color: rgba(0,0,0,.24);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+.w-layout-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+}
+
+a {
+    background-color: transparent;
+    color: #21d7e5;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.dapp-card-top-item {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.heading-3, .heading-4 {
+    font-family: 'Work Sans',sans-serif;
+    color: #21d7e5;
+}
+
+.personal-balances {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 6px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.stat-heading {
+    margin-top: 0;
+    margin-right: 8px;
+    margin-bottom: 0;
+    font-family: 'Work Sans',sans-serif;
+    color: #21d7e5;
+    font-weight: 600;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.text-16 {
+    display: inline-block;
+    font-family: 'Roboto Mono',sans-serif;
+    font-size: 1.125em;
+    line-height: 1.4;
+}
+
+.text-16.text-16-80 {
+    opacity: .8;
+}
+
+.risk-level {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 20px;
+    padding: 4px 10px 2px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(33,215,230,.05);
+    opacity: .8;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    color: #21d7e5;
+    text-decoration: none;
+}
+
+.risk-level.high {
+    background-color: rgba(255,108,111,.1);
+    color: #ff6c6f;
+    font-weight: 600;
+}
+
+.dapp-card-top-item.middle {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid rgba(33,215,230,.2);
+    border-left: 1px solid rgba(33,215,230,.2);
+}
+
+.button-wrap {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.btn-mini {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #21d7e5;
+    -webkit-transition: color .2s,box-shadow .2s,background-color .2s,-webkit-transform .4s;
+    transition: color .2s,box-shadow .2s,background-color .2s,transform .4s,-webkit-transform .4s;
+    font-family: 'Work Sans',sans-serif;
+    color: #121212;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    height: 48px;
+}
+
+.menu-button-icon {
+    right: 0;
+    position: absolute;
+    padding-top: 10px;
+    padding-right: 7px;
+    color: var(--primary-dim);
+    transition: color .2s,box-shadow .2s,background-color .2s,transform .4s,-webkit-transform .4s;
+}
+
+.menu-button-icon:hover {
+    color: var(--primary);
+    -webkit-transform: translate(0,-2px);
+    -ms-transform: translate(0,-2px);
+    transform: translate(0,-2px);
+}
+
+@media screen and (max-width: 1280px) {
+    .dapp-side-nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 60px;
+        min-width: auto;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        background-color: #000;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+    }
+
+    .dapp-nav-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+        border-right-style: none;
+        background-color: transparent;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+
+    .dapp-navbar-section-heading {
+        text-align: left;
+    }
+
+    .side-nav-bottom-block {
+        position: relative;
+        left: 10px;
+        top: auto;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .w-nav[data-collapse=medium] .w-nav-button {
+        display: block;
+    }
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.active-text {
+    color: #21d7e5 !important;
+    font-weight: 600 !important;
+}
+
+@media screen and (min-width: 480px) {
+    .mobile-only-flex {
+        display: flex;
+    }
+}
+
+.pin-right {
+    float: right;
+    margin-left: auto !important;
+}

@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
+
+.marginleft-auto {
+    margin-left: auto;
+}
+
+.right-aligned {
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.left-aligned {
+    margin-left: 0; 
+    margin-right: auto;
+}
+
+.info-box {
+    border: 1px solid #21D7E58F;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 28px;
+    min-height: 210px;
+    height: auto;
+    margin-right: 24px;
+}
+
+.debt-progress-container {
+    font-family: var(--unnamed-font-family-work-sans);
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--primary);
+    width: 100%;
+    padding-bottom: 25px;
+  }
+
+.c-ratio-info-text {
+    margin-left: auto;
+    font-family: var(--unnamed-font-family-roboto-mono);
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--primary-dim);
+    text-align: right;
+  }
+
+.info-box-text-badge {
+    width: 89px;
+    height: 32px;
+    padding: 4px 8px;
+    opacity: 0.1;
+    border-radius: 8px;
+    background-color: var(--red);
+}
+
+.warning {
+    color: #ff6c6f;
+    opacity: 1;
+}
+
+.high {
+    font-family: WorkSans;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--red);
+    opacity: 1;
+  }
+
+
+.inline-div {
+    display: flex;
+    align-items: center;
+}
+
+.info-banner {
+    background-image: linear-gradient(268deg, #6156c3 25%, #2ab6c7);
+    color: #000000;
+}
+
+.info-banner-text {
+    min-height: 48px;
+    font-family: Roboto Mono;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--black);
+    padding: 11px;
+}
+
+.button {
+    min-width: 120px;
+    width: 200px;
+    margin: 12px auto 0px auto;
+    padding: 12px 16px;
+    box-shadow: 0 0 4px 0 rgba(98, 212, 226, 0.5);
+    border: solid 1px var(--primary);
+    background-color: var(--primary);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color .2s,box-shadow .2s,background-color .2s,transform .4s,-webkit-transform .4s;
+}
+
+.button:hover {
+    -webkit-transform: translate(0,-2px);
+    -ms-transform: translate(0,-2px);
+    transform: translate(0,-2px);
+}
+
+.icon-wrapper {
+    height: 58px;
+    width: 58px;
+    border-radius: 8px;
+}
+
+.button-text {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--black);
+}
+
+.scale-up-on-hover {
+    transition: .2s ease-in-out;
+}
+
+.scale-up-on-hover:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.current-debt-text {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--primary-dim);
+  }
+
+.MuiTooltip-tooltip {
+    background-color: var(--translucent) !important;;
+    max-width: 220 !important;;
+    font-family: Work Sans !important;;
+    font-size: 14px !important;;
+    font-weight: 500 !important;;
+    font-stretch:  normal !important;;
+    font-style: normal !important;;
+    line-height: normal !important;;
+    letter-spacing: normal !important;;
+    text-align: left !important;;
+    border: solid 1px rgba(33, 215, 229, 0.75) !important;;
+    color: var(--primary-dim) !important;
+}
+
+.collateral-title-text {
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--primary);
+}
+
+:root {
+
+    /* Colors: */
+    --black: #000000;
+    --translucent: #000000;
+    --grey: #707070;
+    --red: #FF6C6F;
+    --primary: #21D7E5;
+    --primary-dim: #6D979B;
+    --secondary: #7365cf;
+    --secondary-tint-20: #17142a;
+    --primary-tint-10: #172a2c;
+    
+    /* Font/text values */
+    --unnamed-font-family-work-sans: Work Sans;
+    --unnamed-font-family-roboto-mono: Roboto Mono;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-600: 600px;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-medium: medium;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-22: 22px;
+    --unnamed-font-size-28: 28px;
+    --unnamed-font-size-30: 30px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-19: 19px;
+    --unnamed-line-spacing-21: 21px;
+    --unnamed-line-spacing-25: 25px;
+    --unnamed-line-spacing-33: 33px;
+    --unnamed-line-spacing-35: 35px;
+    --unnamed-text-transform-uppercase: uppercase;
+    }
+    
+    /* Character Styles */
+    .sidebar-section-title {
+    font-family: var(--unnamed-font-family-work-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-19);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--grey);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+    .button-label-filled- {
+    font-family: var(--unnamed-font-family-work-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-21);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--black);
+    }
+    .button-label-outline- {
+    font-family: var(--unnamed-font-family-work-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-21);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--primary);
+    }
+    .heading-1 {
+    font-family: var(--unnamed-font-family-work-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-30);
+    line-height: var(--unnamed-line-spacing-35);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--primary);
+    }
+    .heading-2 {
+    font-family: var(--unnamed-font-family-work-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-28);
+    line-height: var(--unnamed-line-spacing-33);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--primary);
+    }
+    .heading-3 {
+    font-family: var(--unnamed-font-family-work-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-22);
+    line-height: var(--unnamed-line-spacing-25);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--primary);
+    }
+    .paragraph {
+    font-family: var(--unnamed-font-family-roboto-mono);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-21);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--primary-dim);
+    }
+    .nav-link-inactive {
+    font-family: var(--unnamed-font-family-work-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-21);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--primary-dim);
+    }
+    .nav-link-active {
+    font-family: var(--unnamed-font-family-work-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-21);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--primary);
+    }
+
+.stake-icons {
+    margin: 13px !important;
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.container-mobile {
+    padding: 42px 92px;
+}
+
+.debt-progress-bar {
+    height: 12px !important;
+    min-width: 25px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #0d535c !important;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .container-mobile {
+        padding: 24px 32px !important;
+    }
+
+    .info-box-wrapper {
+        padding-bottom: 12px;
+    }
+
+    .info-box {
+        margin-right: 0px !important;
+    }
+
+    .debt-progress-bar {
+        height: 12px !important;
+        min-width: 25px;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #0d535c !important;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .button {
+        margin-top: 10px !important;
+    }
+}
+
+.tooltip-styled {
+    z-index: 0 !important;
+}
+
+@media screen and (max-width: 500px) {
+    .collateral-title-text {
+        font-size: 16px !important;
+    }
+
+    .c-ratio-info-text {
+        font-size: 14px !important;
+    }
+
+    .container-mobile {
+        padding: 24px 20px !important;
+    }
+
+    .info-box {
+        padding: 18px;
+    }
+
+    .title-top-padding {
+        padding-top: 18px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .collateral-title-text, .c-ratio-info-text {
+        font-size: 18px;
+    }
+}

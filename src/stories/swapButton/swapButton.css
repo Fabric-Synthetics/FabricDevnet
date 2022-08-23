@@ -1,0 +1,63 @@
+.swap-button-outline {
+    width: 50px;
+    height: 50px;
+    margin: 12px auto;
+    box-shadow: 0 0 5px 0 rgb(115 101 207 / 50%);
+    background: var(--primary);
+    /* background: -moz-linear-gradient(45deg, #7365cf 0%, #2ab6c7 100%);
+    background: -webkit-linear-gradient(45deg, #7365cf 0%,#2ab6c7 100%);
+    background: linear-gradient(45deg, #7365cf 0%,#2ab6c7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7365cf', endColorstr='#2ab6c7',GradientType=1 );  */
+    border-radius: 9999px;
+    -webkit-transition: color .2s,box-shadow .2s,background-color .2s,-webkit-transform .4s !important;
+    transition: color .2s,box-shadow .2s,background-color .2s,transform .4s,-webkit-transform .4s !important;
+}
+
+.swap-button {
+    width: 46px;
+    height: 46px;
+    border-radius: 9999px;
+    background-color: var(--black);
+    margin: 2px;
+}
+
+.swap-button-icon {
+    width: 28px !important;
+    height: 28px !important;
+    display: flex !important;
+    margin-right: auto;
+    float: none;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: color .2s,box-shadow .2s,background-color .2s,-webkit-transform .4s !important;
+    transition: color .2s,box-shadow .2s,background-color .2s,transform .4s,-webkit-transform .4s !important;
+    font-family: Materialiconsround,sans-serif;
+    color: var(--primary);
+    font-size: 1.3em;
+    line-height: 26px;
+    text-align: center;
+    text-shadow: 0 0 19px rgb(115 101 207 / 50%);
+    cursor: pointer;
+    border-radius: 999999px;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.swap-gradient {
+    background: -moz-linear-gradient(45deg, #7365cf 0%, #2ab6c7 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #7365cf 0%,#2ab6c7 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #7365cf 0%,#2ab6c7 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7365cf', endColorstr='#2ab6c7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.swap-button-outline:hover {
+    -webkit-transform: translate(0,-2px);
+    -ms-transform: translate(0,-2px);
+    transform: translate(0,-2px);
+}

@@ -1,0 +1,174 @@
+/* INPUT FIELD CSS */
+.input-field-container {
+    height: 83px;
+    padding: 0.750em 0.750em 0.750em 1em;
+    border-radius: 8px;
+    border: solid 1px var(--primary);
+    background-color: var(--form-field-border);
+}
+
+.input-field-max-button {
+    width: 68px;
+    height: 45px;
+    padding: 12px 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0 rgba(98, 212, 226, 0.5);
+    border: solid 1px var(--primary);
+    background-color: var(--primary);
+}
+
+.input-field-max-button-text {
+    font-family: Work Sans;
+    font-size: 1.125em;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: black;
+}
+
+.input-field-half-button {
+    width: 68px;
+    height: 31px;
+    padding: 6px 16px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px 0 rgba(98, 212, 226, 0.5);
+    border: solid 1px var(--primary);
+    margin-top: 7px;
+}
+
+.input-field-half-button-text {
+    font-family: Work Sans;
+    font-size: 1em;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--primary);
+}
+
+.input-field-usd-value-text {
+    font-family: Roboto Mono;
+    font-size: 0.875em;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--primary-dim);
+}
+
+.input-field-dropdown {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.input-field {
+    height: auto;
+    width: auto;
+    min-width: 100px;
+    border-style: none;
+    background-color: transparent;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    font-family: 'Roboto Mono', sans-serif;
+    margin: 0;
+
+    font-size: 1.5em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--grey);
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-field-dropdown-option-container {
+    padding: 4px 14px 5px 14px;
+    border-radius: 8px;
+    background-color: var(--primary-tint-10);
+    height: 30px;
+    display: inline-flex;
+}
+
+.input-field-dropdown-symbol-logo {
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.input-field-dropdown-symbol-text {
+    padding-left: 5px;
+    font-family: Roboto Mono;
+    font-size: 1em;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--primary);
+}
+
+.no-outline-on-focus:focus-visible {
+    outline: none;
+}
+
+.input-field-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hide-on-mobile {
+    display: visible;
+}
+
+@media screen and (max-width: 600px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .input-field-usd-value-estimate {
+        display: none !important;
+    }
+}
+
+select {
+    border: 0px;
+    padding-left: 5px;
+    font-family: Roboto Mono;
+    font-size: 1em;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--primary);
+}
+
+select:focus {
+    outline: none;
+}
